@@ -30,13 +30,13 @@ set autoread
 "开启语法高亮功能
 syntax enable
 syntax on
-   
+
 "指定配色方案为256色
 set t_Co=256
-   
+
 "设置搜索时忽略大小写
 set ignorecase
-   
+
 "配置backspace的工作方式
 set backspace=indent,eol,start
 
@@ -44,17 +44,21 @@ set backspace=indent,eol,start
 set cursorline
 
 "设置tab宽度
-set tabstop=8
-   
+set tabstop=4
+
 "设置自动对齐空格数
-set shiftwidth=8
+set shiftwidth=4
 
 "设置退格键时可以删除4个空格
 set smarttab
-set softtabstop=8
-   
-"不将tab键自动转换为空格
-set noexpandtab
+set softtabstop=4
+
+"将tab键自动转换为空格
+set expandtab
+
+"显示空格
+set listchars=tab:>-,trail:.,extends:#,nbsp:-
+set list
 
 "设置编码方式
 set encoding=utf-8
