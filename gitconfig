@@ -1,0 +1,32 @@
+[user]
+	email = peterchenshen@gmail.com
+	name = Peter Shen
+[format]
+	pretty = fuller # more detail for "git show"
+
+[color]
+	ui = true # everybody loves color (except for Linus :( )
+
+[column]
+	# This lets "git stat" stack multiple filenames per row (like vanilla 'ls')
+	ui = always
+
+[diff]
+	tool = vimdiff
+	renames = true
+	noprefix = true # drops the annoying a/filename.foo b/filename.foo prefixes
+
+[difftool]
+	prompt = false
+
+[merge]
+	# This is REALLY useful.  Adds 'original_version' to diffs like so:
+	# <<<<<<<
+	# OUR_VERSION
+	# |||||||
+	# ORIGNINAL_VERSION
+	# =======
+	# THEIR_VERSION
+	# >>>>>>>
+	conflictstyle = diff3
+	defaultToUpstream = true
