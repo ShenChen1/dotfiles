@@ -1,6 +1,10 @@
 [user]
 	email = peterchenshen@gmail.com
 	name = Peter Shen
+
+[core]
+	editor = vim
+
 [format]
 	pretty = fuller # more detail for "git show"
 
